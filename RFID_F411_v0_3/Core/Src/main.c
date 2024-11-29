@@ -90,7 +90,7 @@ bool sw_pass_s;
 uint8_t rx_data[64];
 uint8_t rx_data_temp;
 uint8_t sw_status;
-uint8_t send_buffer[] = {"TM_00_P_S_PAL_Linia_X_XX\n"};
+uint8_t send_buffer[] = {"TM_00_P_S_PAL_Linia_X_XX\n"}; //wzor
 uint8_t ReceviedLines; // Complete lines counter
 uint8_t ReceivedData[64]; // A buffer for parsing
 
