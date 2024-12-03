@@ -64,8 +64,8 @@ void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(ST_RED_GPIO_Port, ST_RED_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : PC13 PCPin PCPin PCPin
-                           PCPin */
+  /*Configure GPIO pins : PC13 BL1_Pin ST_BLUE_Pin ST_GREEN_Pin
+                           ST_YELLOW_Pin */
   GPIO_InitStruct.Pin = GPIO_PIN_13|BL1_Pin|ST_BLUE_Pin|ST_GREEN_Pin
                           |ST_YELLOW_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -73,7 +73,7 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PAPin PAPin */
+  /*Configure GPIO pins : P_Sensor_Pin PASS_SW_Pin */
   GPIO_InitStruct.Pin = P_Sensor_Pin|PASS_SW_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -86,29 +86,29 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PB0 PBPin PBPin */
+  /*Configure GPIO pins : PB0 D32_Pin BL2_Pin */
   GPIO_InitStruct.Pin = GPIO_PIN_0|D32_Pin|BL2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PBPin PBPin PBPin PBPin
-                           PBPin */
+  /*Configure GPIO pins : ADDR4_Pin ADDR3_Pin ADDR2_Pin ADDR1_Pin
+                           ADDR0_Pin */
   GPIO_InitStruct.Pin = ADDR4_Pin|ADDR3_Pin|ADDR2_Pin|ADDR1_Pin
                           |ADDR0_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PtPin */
+  /*Configure GPIO pin : Hirata_NG_Pin */
   GPIO_InitStruct.Pin = Hirata_NG_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(Hirata_NG_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PtPin */
+  /*Configure GPIO pin : ST_RED_Pin */
   GPIO_InitStruct.Pin = ST_RED_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
