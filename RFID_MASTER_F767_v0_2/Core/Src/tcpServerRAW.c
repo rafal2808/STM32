@@ -730,6 +730,7 @@ static void tcp_server_handle (struct tcp_pcb *tpcb, struct tcp_server_struct *e
 	else
 	{
 		uint8_t ERR_str[3] = {"ERR"};
+		UART_Log("ERR TCP Command");
 		//strcat (buf, "+ Hello from TCP SERVER1111111\n");
 
 
