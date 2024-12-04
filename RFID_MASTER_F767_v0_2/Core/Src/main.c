@@ -132,7 +132,6 @@ int main(void)
   MX_GPIO_Init();
   MX_USART3_UART_Init();
   MX_USB_OTG_FS_PCD_Init();
-  HAL_Delay(3000);
   MX_USART2_UART_Init();
   MX_USART6_UART_Init();
   MX_LWIP_Init();
